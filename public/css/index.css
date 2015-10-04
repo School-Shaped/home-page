@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Medium.ttf");
+}
+
+body {
+	font-family: Raleway;
+}
+
+#content {
+	/* http://www.cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28top\%2C\%20rgba\%28210\%2C255\%2C82\%2C1\%29\%200\%25\%2C\%20rgba\%28243\%2C255\%2C207\%2C1\%29\%2033\%25\%2C\%20rgba\%28255\%2C255\%2C255\%2C1\%29\%2067\%25\%2C\%20rgba\%28255\%2C255\%2C255\%2C1\%29\%20100\%25\%29\%3B' */
+	background: rgba(210,255,82,1);
+	background: -moz-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(243,255,207,1) 33%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210,255,82,1)), color-stop(33%, rgba(243,255,207,1)), color-stop(67%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(243,255,207,1) 33%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(243,255,207,1) 33%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(243,255,207,1) 33%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(243,255,207,1) 33%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#ffffff', GradientType=0);
+}
+
+.section-1 {
+  	-webkit-transform-style: preserve-3d;
+  	-moz-transform-style: preserve-3d;
+  	transform-style: preserve-3d;
+}
+
+.intro {
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.logo {
+	height: 200px;
+}
+
+.next-section {
+	position: absolute;
+	top: 87%;
+	width: 100%;	
+}
+
+.program-explanation {
+	padding-top: 50px;
+  	padding-left: 20px;
+  	padding-right: 20px; 
+  	white-space: pre-line;
+}
+
+.what-we-do {
+	width: 100%;
+}
+
+/* to be used for font sizing */
+@media (max-width: 480px) {  }
