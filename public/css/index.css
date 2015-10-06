@@ -101,8 +101,7 @@ body {
 }
 
 .bios-container {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;	
 }
 
 .profile-img {
@@ -112,6 +111,10 @@ body {
 
 .bio-name {
 	color: red;
+}
+
+.bio-row {
+	margin-bottom: 10px;
 }
 
 .footer {
