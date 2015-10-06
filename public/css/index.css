@@ -71,6 +71,7 @@ body {
 }
 
 .component {
+	text-align: center;
 	height: 475px;
 	position: relative;
 	background: darkslategray;
@@ -82,6 +83,7 @@ body {
 .component-img {
 	position: absolute;
 	bottom: 10px;
+	transform: translateX(-50%);
 }
 
 .bios-container {
@@ -103,9 +105,13 @@ body {
 	background-color: yellow;
 }
 
-/* to be used for font sizing */
-@media (max-width: 480px) { 
+/* to be used for img resizing */
+@media (max-width: 500px) { 
 	.component-img {
-		height: 100px;
+		height: 300px;
+	}
+
+	.bio-text, .bio-img {
+		text-align: center;
 	}
 }
