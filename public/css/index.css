@@ -99,8 +99,13 @@ body {
 
 .footer {
 	padding: 20px;
+	margin-top: 20px;
 	background-color: yellow;
 }
 
 /* to be used for font sizing */
-@media (max-width: 480px) {  }
+@media (max-width: 480px) { 
+	.component-img {
+		height: 100px;
+	}
+}
