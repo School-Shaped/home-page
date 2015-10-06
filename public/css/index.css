@@ -122,7 +122,7 @@ body {
 }
 
 /* to be used for img resizing */
-@media (max-width: 600px) { 
+@media (max-device-width: 480px) { 
 	.component-img {
 		height: 300px;
 	}
