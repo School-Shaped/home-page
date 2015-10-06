@@ -80,6 +80,18 @@ body {
 	border-radius: 8px;
 }
 
+.component-1 {
+	background-color: cadetblue;
+}
+
+.component-2 {
+	background-color: chocolate;
+}
+
+.component-3 {
+	background-color: dodgerblue;
+}
+
 .component-img {
 	position: absolute;
 	bottom: 10px;
@@ -91,8 +103,8 @@ body {
 }
 
 .avatar-img {
-	max-height: 300px;
-	max-width: 300px;
+	max-height: 150px;
+	max-width: 150px;
 }
 
 .bio-name {
@@ -103,6 +115,10 @@ body {
 	padding: 20px;
 	margin-top: 20px;
 	background-color: yellow;
+}
+
+#section-1, #section-2 {
+	padding-bottom: 120px;
 }
 
 /* to be used for img resizing */
