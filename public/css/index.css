@@ -100,6 +100,10 @@ body {
 	transform: translateX(-50%);
 }
 
+.component-img.distribute-img {
+	bottom: 22px;
+}
+
 .bios-container {
 	padding-top: 30px;	
 }
@@ -140,5 +144,45 @@ body {
 
 	.bio-text, .bio-img {
 		text-align: center;
+	}
+
+	h1 {
+		font-size: 90px;
+	}
+
+	h3 {
+		font-size: 60px;
+	}
+
+	body {
+		font-size: 50px;
+	}
+
+	.component-img {
+		position: relative;
+		bottom: 0px;
+		transform: translateX(0%);
+	}
+
+	.component-img.distribute-img {
+		margin-top: 40px;
+	}
+
+	.component-img.rocket-img {
+		margin-top: 20px;
+	}
+
+	.distribute-img, .rocket-img {
+		margin-bottom: 20px;
+	}
+
+	.component {
+		padding-top: 10px;
+		height: inherit;		
+		margin-bottom: 20px;
+	}
+
+	.bio-text {
+		margin: 40px;
 	}
 }
