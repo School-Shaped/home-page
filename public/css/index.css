@@ -111,6 +111,7 @@ body {
 .profile-img {
 	max-height: 150px;
 	max-width: 150px;
+	border-radius: 50%;
 }
 
 .bio-name {
@@ -118,11 +119,11 @@ body {
 }
 
 .bio-row {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .footer {
-	padding: 20px;
+	padding: 2px;
 	margin-top: 20px;
 	background-color: #f1c40f;
 }
@@ -183,6 +184,6 @@ body {
 	}
 
 	.bio-text {
-		margin: 40px;
+		margin-bottom: 40px;
 	}
 }
