@@ -101,7 +101,13 @@ body {
 }
 
 .component-img.distribute-img {
-	bottom: 22px;
+	bottom: 36px;
+	height: 230px;
+}
+
+.component-img.rocket-img {
+	bottom: 15px;
+	height: 260px;
 }
 
 .bios-container {
