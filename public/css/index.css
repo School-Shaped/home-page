@@ -142,6 +142,15 @@ body {
 	background-color: rgb(236,236,236);
 }
 
+.collaborate-img {
+	width: 240px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 
+	.bio-text, .bio-img {
+		text-align: center;
+	}
+}
 
 /* to be used for img resizing */
 @media (max-device-width: 480px) { 
