@@ -15,3 +15,50 @@ function setContentHeight() {
 
 window.onresize = setContentHeight;
 window.onload = setContentHeight;
+
+$(function(){
+	rotateText();
+
+	var firstInstance = jsPlumb.getInstance();
+	firstInstance.setContainer($("program-explanation "));
+
+	firstInstance.importDefaults({
+		Connector:[ "Straight" ],
+		Anchors : [ "BottomCenter", "TopCenter" ],
+		Endpoint:[ "Dot", { radius:5 } ],
+		EndpointStyle : { fillStyle: "#567567"  },
+		// Anchor : [ 0.5, 0.5, 1, 1 ]
+	});
+
+	firstInstance.connect({
+		source:"explanation-1", 
+		target:"explanation-2"		
+	});
+})
+
+function rotateText(currentIndex) {
+	var el = $(".text-rotate");	
+
+	var textRotateValues = [
+		"curriculum?",
+		"lesson?",
+		"grading experience?",		
+	]
+
+	var currentIndex = currentIndex || 0;
+
+	var children = el.children();
+
+	console.log(children);
+
+	if (children.length > 3) {
+		children[children.length-1].remove();
+	}
+
+	var currentScroll = el.scrollTop();	
+	el.prepend("<div>" + textRotateValues[currentIndex % textRotateValues.length] + "</div>");	
+	el.scrollTop(currentScroll + el.height());
+	el.animate({scrollTop: 0}, '1000');
+
+	setTimeout(function() { rotateText(currentIndex + 1) }, 3000);
+}
