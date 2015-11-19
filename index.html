@@ -2,9 +2,10 @@
 <head>
 	<meta name="google-site-verification" content="O7e--0_YfxmgdeJ1-F2JeqTo9jW0fXT3OJRVNxB-zYo" />
 	<title>School Shaped</title>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css"></link>
 	<link rel="stylesheet" type="text/css" href="public/css/index.css"></link>	
+	<link rel="stylesheet" type="text/css" href="public/css/common.css"></link>	
 	<script type="text/javascript" src="public/js/jsPlumb-2.0.4.js"></script>
 	<script type="text/javascript" src="public/js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="public/js/index.js"></script>
@@ -24,144 +25,154 @@
 <body>	
 	<div id="content">	
 		<div id="section-1" class="section">
-			<div class="intro text-center">
-				<img class="logo" src="public/img/logo.svg">
-				<h1>School Shaped</h1>
-				<h3>Experiences built with teachers</h3>				
-			</div>			
-			<div class="text-center next-section">
-<!-- 				<h2 class="next-section-title text-center">
-					What we do
-				</h2>
- -->				<h1 class="next-section-arrow">										
-					<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>					
-				</h1>			
+			<div class="topbar clearfix">			
+				<div class="logo-container">
+					<div class="logo-wrapper">					
+						<h3 class="logo-text logo-text-prefix">SCHOOL</h3><img class="logo" src="public/img/logo.svg"><h3 class="logo-text logo-text-postfix">SHAPED</h3>
+					</div>
+				</div>
+				<div class="nav-links">
+					<h4 class="nav-link active"><a href="">home</a></h4>
+					<h4 class="nav-link"><a href="/mission.html">mission</a></h4>
+					<h4 class="nav-link"><a href="/team.html">team</a></h4>
+					<h4 class="nav-link"><a href="http://blog.schoolshaped.org">blog</a></h4>
+				</div>
+			</div> 
+
+			<div class="intro-container">
+				<div class="intro text-center">
+					<h1 class="intro-line-1">Teachers, Engineers, and Designers</h1>
+					<h3 class="intro-line-2">Together, let's create the tools and experiences our schools deserve.</h3>				
+					<!-- <a class="learn-more-link"><h3 class="learn-more">Our Mission</h3></a>										 -->
+				</div>						
 			</div>
 		</div>		
-		<div id="section-2" class="section">			
-			<div class="program-explanation container"> 	
-				<div class="question-intro" id="explanation-1"> 
-					<h3 class="row text-center">
-						We ask teachers: 
-					</h3>
-					<h2 class="row text-center text-emphasis">
-						What is your ideal 
-						<div class="text-rotate">curriculum</div>
-					</h2>
+		<div class="program-explanations container">
+			<div class="row"> 
+				<div class="col-md-6 program-explanation teacher-program"> 					
+					<div class="explanation-intro text-center">
+					 	<h1 class="explanation-target">
+					 		Teachers
+					 	</h1>
+					 	<h3 class="explanation-pitch">
+					 		Tools and experiences you want, when you don't have the time to create them yourself.
+					 	</h3>
+					</div>
+
+					<div class="explanation-component" id="teacher-explanation-1"> 
+						<div class="explanation-wrapper img-right clearfix">						
+							<h3 class="explanation-content explanation-text">					
+								Teachers know what they and their students need
+							</h3>
+						<img class="explanation-content explanation-icon explanation-icon-1 img-right" src="public/img/noun_25586.svg"/>						
+						</div>									
+					</div>	
+
+					<div class="explanation-component" id="teacher-explanation-2"> 
+						<div class="explanation-wrapper clearfix">
+							<img class="explanation-content explanation-icon explanation-icon-2 img-left" src="public/img/noun_143752.svg"/>		
+							<h3 class="explanation-content explanation-text">					
+								However, they often lack the time and resources they need to make changes to their (insert here)
+							</h3>						
+						</div>									
+					</div>
+
+
+					<div class="explanation-component" id="teacher-explanation-3"> 
+						<div class="explanation-wrapper clearfix">
+							<h3 class="explanation-content explanation-text">					
+								So we partner with teams of engineers and designers from School Shaped, to create new products and experiences
+							</h3>
+							<img class="explanation-content explanation-icon explanation-icon-3 img-right" src="public/img/noun_43498.svg"/>						
+						</div>									
+					</div>	
+
+
+					<div class="explanation-component" id="teacher-explanation-4"> 
+						<div class="explanation-wrapper clearfix">
+							<img class="explanation-content explanation-icon explanation-icon-4 img-left" src="public/img/noun_117741.svg"/>						
+							<h3 class="explanation-content explanation-text">					
+								The teacher receives free prototypes to try in their classrooms
+							</h3>						
+						</div>									
+					</div>	
+
+
+					<div class="explanation-component" id="teacher-explanation-5"> 
+						<div class="explanation-wrapper clearfix">
+							<h3 class="explanation-content explanation-text">					
+								The process, and the design thinking it produces, empowers teachers to continue to reimagine their classroom
+							</h3>
+							<img class="explanation-content explanation-icon explanation-icon-5 img-right" src="public/img/noun_103201.svg"/>			
+						</div>									
+					</div>		
 				</div>	
-				
-				<h2 class="row explanation-section text-center" id="explanation-2">
-					Then we partner them with teams of designers and engineers who can help make that happen.
-				</h2>				
-				<h2 class="row explanation-section explanation-3 text-center" id="explanation-3">
-					The team provides the missing pieces which the teacher may not have the time or expertise to provide.
-				</h2>								
-				<div class="row explanation-section explanation-4" id="explanation-4">
-					<h2 class="col-md-3">
-						Software
-					</h2>
-					<h2 class="col-md-3">
-						Hardware
-					</h2>
-					<h2 class="col-md-3">
-						Research
-					</h2>
-					<h2 class="col-md-3">
-						Organization
-					</h2>
-				</div>								
-			</div>
-			<div class="text-center next-section">
-				<h1 class="next-section-arrow">										
-					<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>					
-				</h1>			
-			</div>
-		</div>
-		<div id="section-3" class="section">			
-			<div class="bios-container container">
-				<h2 class="row text-center team-intro">
-					We are a team of educators, engineers, designers and school builders.
-				</h2>
-				<div class="row bio-row">
-					<div class="col-md-6">
-						<div class="col-md-4 bio-img">
-							<img class="profile-img" src="public/img/david-profile.png"/>
-						</div>
-						<div class="col-md-8 bio-text">
-							<a href="http://freedavid.co"><h3 class="bio-name"> David Gaynor </h3></a>
-							David likes to be learning. He believes that schools not only teach, but empower, and wants to make that easier.
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-4 bio-img">
-							<img class="profile-img" src="public/img/graham-profile.jpg"/>
-						</div>
-						<div class="col-md-8 bio-text">
-							<h3 class="bio-name"> Graham Hooton </h3>
-							Graham is a traveler, a twin, a creator of community, and a passionate believer in the power of education to change the world.
-						</div>
-					</div>
-				</div>
 
-				<div class="row bio-row">
-					<div class="col-md-6">
-						<div class="col-md-4 bio-img">
-							<img class="profile-img" src="public/img/ari-profile.jpg"/>
-						</div>
-						<div class="col-md-8 bio-text">
-							<a href="http://arianachae.me"><h3 class="bio-name"> Ariana Chae </h3></a>
-							An engineer with a creative twist, Ari wants to create products that will serve immediate needs, especially in the ed-tech and K-12 education space.
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-4 bio-img">
-							<img class="profile-img" src="public/img/julie-profile.jpg"/>
-						</div>
-						<div class="col-md-8 bio-text">
-							<h3 class="bio-name"> Julie Cameron </h3>
-							Committed to ensuring at-risk students receive quality education. Can't take a good photo without an owl next to her.
-						</div>
-					</div>
-				</div>
 
-				<div class="row bio-row">
-					<div class="col-md-6">
-						<div class="col-md-4 bio-img">
-							<img class="profile-img" src="public/img/adam-profile.png"/>
-						</div>
-						<div class="col-md-8 bio-text">
-							<h3 class="bio-name"> Adam Coppola </h3>
-							Adam is an education designer because every school deserves to feel like a community. 
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-4 bio-img">
-							<img class="profile-img" src="public/img/doyung-profile.png"/>
-						</div>
-						<div class="col-md-8 bio-text">
-							<h3 class="bio-name"> Doyung Lee </h3>
-							Doyung spends a lot of time in the classroom. Sometimes he's learning, sometimes teaching, sometimes researching, and sometimes designing. He's never late for school.
-						</div>
-					</div>
-				</div>		
 
-				<div class="row bio">
-					<div class="col-md-6">
-						<div class="col-md-4 bio-img">
-							<img class="profile-img" src="public/img/victoria-profile.jpg"/>
-						</div>
-						<div class="col-md-8 bio-text">
-							<h3 class="bio-name"> Victoria Preston </h3>
-							Victoria hopes to one day be an educator in her own right following graduation from Olin College of Engineering and a stint in grad school. <!-- While enrolled as a robotics engineer at Olin, she has conducted several research projects centering on student voice and the impacts of stereotype threat on learning environments.
-							She has also mentored local students and provided science, math, and engineering enrichment opportunities to the community. School Shaped excited her as a way to unite the design thinking skills that engineering develop with her passions to empower local schools. -->
-						</div>
-					</div>					
-				</div>					
-			</div>
-			<div class="footer text-center">
-				<h3>Contact us at <a href="mailto:team@schoolshaped.org"> team@schoolshaped.org</a>. Follow our journey on our <a href="http://blog.schoolshaped.org">blog</a>.<h3>
-			</div>
-		</div>		
+				<div class="col-md-6 program-explanation builder-program"> 					
+					<div class="explanation-intro text-center">
+					 	<h1 class="explanation-target">
+					 		Developers and Designers
+					 	</h1>
+					 	<h3 class="explanation-pitch">
+					 		Insight, experience, and profesional development to help you build amazing edtech products.
+					 	</h3>
+					</div>
+
+					<div class="explanation-component" id="builder-explanation-1"> 
+						<div class="explanation-wrapper clearfix">						
+							<h3 class="explanation-content explanation-text">					
+								Teachers know what they and their students need
+							</h3>
+							<img class="explanation-content explanation-icon explanation-icon-1" src="public/img/noun_25586.svg"/>						
+						</div>									
+					</div>	
+
+					<div class="explanation-component" id="builder-explanation-2"> 
+						<div class="explanation-wrapper clearfix">
+							<img class="explanation-content explanation-icon explanation-icon-2" src="public/img/noun_143752.svg"/>						
+							<h3 class="explanation-content explanation-text">					
+								However, they often lack the time and resources they need to make changes to their (insert here)
+							</h3>						
+						</div>									
+					</div>
+
+
+					<div class="explanation-component" id="builder-explanation-3"> 
+						<div class="explanation-wrapper clearfix">
+							<h3 class="explanation-content explanation-text">					
+								So we partner with teams of engineers and designers from School Shaped, to create new products and experiences
+							</h3>
+							<img class="explanation-content explanation-icon explanation-icon-3" src="public/img/noun_43498.svg"/>						
+						</div>									
+					</div>	
+
+
+					<div class="explanation-component" id="builder-explanation-4"> 
+						<div class="explanation-wrapper clearfix">
+							<img class="explanation-content explanation-icon explanation-icon-4" src="public/img/noun_117741.svg"/>						
+							<h3 class="explanation-content explanation-text">					
+								The teacher receives free prototypes to try in their classrooms. They now have a larger arsenal of tools to enhance their students' learning
+							</h3>						
+						</div>									
+					</div>	
+
+
+					<div class="explanation-component" id="builder-explanation-5"> 
+						<div class="explanation-wrapper clearfix">
+							<h3 class="explanation-content explanation-text">					
+								The process, and the design thinking it produces, empowers teachers to continue to reimagine their classroom
+							</h3>
+							<img class="explanation-content explanation-icon explanation-icon-5" src="public/img/noun_103201.svg"/>						
+						</div>									
+					</div>	
+					<div class"email-list-button-wrapper">
+						<a class="learn-more-link"><h3 class="learn-more">Our Mission</h3></a>											
+					</div>						
+				</div>	
+			</div>				
+		</div> 			
 	</div>		
 </body>
 </html>

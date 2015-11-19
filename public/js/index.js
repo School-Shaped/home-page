@@ -1,11 +1,6 @@
-function setContentHeight() {
-	var numberOfSections = 3
-	var viewportHeight = window.innerHeight;
-
-	document.getElementById("content").style.height = viewportHeight * numberOfSections;
-	document.getElementById("section-1").style.height = viewportHeight;
-	document.getElementById("section-2").style["min-height"] = viewportHeight;
-	document.getElementById("section-3").style["min-height"] = viewportHeight;
+function setContentHeight() {	
+	var viewportHeight = window.innerHeight;	
+	document.getElementById("section-1").style.height = viewportHeight;		
 
 	var sections = document.getElementsByClassName("section");
 	for (i = 0; i < sections.length; i ++)  {		
@@ -13,14 +8,14 @@ function setContentHeight() {
 	}
 }
 
-window.onresize = setContentHeight;
-window.onload = setContentHeight;
+// window.onresize = setContentHeight;
+// window.onload = setContentHeight;
 
 $(function(){
-	rotateText();
+	// rotateText();
 
 	var firstInstance = jsPlumb.getInstance();
-	firstInstance.setContainer($("program-explanation "));
+	firstInstance.setContainer($(".program-explanations"));
 
 	firstInstance.importDefaults({
 		Connector:[ "Straight" ],
@@ -30,10 +25,19 @@ $(function(){
 		// Anchor : [ 0.5, 0.5, 1, 1 ]
 	});
 
-	firstInstance.connect({
-		source:"explanation-1", 
-		target:"explanation-2"		
-	});
+	var numberOfExplanations = 5;
+
+	for (i = 1; i < numberOfExplanations; i++) {
+		firstInstance.connect({
+			source:"teacher-explanation-" + i, 
+			target:"teacher-explanation-" + (i + 1)		
+		});	
+
+		firstInstance.connect({
+			source:"builder-explanation-" + i, 
+			target:"builder-explanation-" + (i + 1)		
+		});	
+	}	
 })
 
 function rotateText(currentIndex) {
