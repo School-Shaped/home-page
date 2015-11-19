@@ -1,3 +1,7 @@
+.body {
+	background: #E7E8E8
+}
+
 .section-1 {
   	-webkit-transform-style: preserve-3d;
   	-moz-transform-style: preserve-3d;
@@ -15,7 +19,7 @@
 }
 
 .intro-container {
-	margin: 100px 0 40px 0;
+	margin: 10px 0 60px 0;
 	/*position: relative;*/
   	/*top: 25%;*/
   	/*transform: translateY(-25%);	*/
@@ -52,7 +56,7 @@
 }
 
 .program-overview {
-	margin-bottom: 40px
+	margin-bottom: 60px
 }
 
 .overview-title {
@@ -79,10 +83,28 @@
 	margin-top: 40px;
 }
 
+.results-section {
+	margin-top: 60px;
+}
+
+.results-title {
+	color: #EC4B75;
+	margin-bottom: 60px;
+}
+
+.result-listing {
+	margin-bottom: 20px;
+}
+
+.results-img {
+	height: 130px;
+}
+
+
 
 /* to be used for img resizing */
 @media (max-device-width: 480px) { 
-	.component-img {
+	.component-img, .results-img {
 		height: 300px;
 	}
 
