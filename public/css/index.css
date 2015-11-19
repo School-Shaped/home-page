@@ -15,7 +15,7 @@
 }
 
 .intro-container {
-	margin: 100px 0 100px 0;
+	margin: 100px 0 40px 0;
 	/*position: relative;*/
   	/*top: 25%;*/
   	/*transform: translateY(-25%);	*/
@@ -66,77 +66,16 @@
 	line-height: 1.5em;	
 }
 
-.program-explanations {
-	position: relative;
+.overview-wrapper {	
+	text-align: center;
 }
 
-.teacher-program .explanation-target {
-	background: #f04f79;
-	color: white;
+.overview-title {
+	color:red;
 }
 
-.builder-program .explanation-target {
-	background: #aa73b1;
-	color: white;
-}
-
-.teacher-program .explanation-intro {
-	color: #f04f79;
-}
-
-.builder-program .explanation-intro {
-	color: #aa73b1;
-}
-
-.explanation-target {
-	padding: 5px;
-}
-
-.explanation-component {
-	text-align: center;	
-	margin-bottom: 100px;	
-	padding: 20px 0 20px 0;
-}
-
-.explanation-component h3 {
-	margin: 0px;
-}
-
-.explanation-text {
-	float: left;
-	width: 70%;
-}
-
-.explanation-icon {
-	float: left;
-	width: 10%;
-	min-width: 100px;
-}
-
-.teacher-program .explanation-icon-2, .teacher-program .explanation-icon-5 {
-	width: 7%;
-	min-width: 90px; 
-}
-
-.teacher-program .explanation-icon-1 {
-	padding-left: 5px;
-}
-
-.teacher-program {
-	border-right: 2px solid #6ec173;
-	padding-right: 20px;
-}
-
-.builder-program {
-	padding-left: 20px;
-}
-
-.img-right {
-	padding-left: 20px;
-}
-
-.img-left {
-	padding-right: 20px;
+.overview-text {
+	font-size: 26px;
 }
 
 
