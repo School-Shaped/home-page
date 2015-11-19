@@ -47,35 +47,29 @@
 	cursor: pointer;
 }
 
-.explanation-section {
-	margin-bottom: 60px;
-}
-
-.explanation-section#explanation-1 {
-	margin-bottom: 0px;
-}
-
-.text-emphasis {
-	font-family: monospace; 
-}
-
-.text-rotate {
-	height: 1.5em;
-	overflow: hidden;	
-	font-family: monospace;
-	line-height: 1.5em;	
-}
-
 .overview-wrapper {	
 	text-align: center;
 }
 
+.program-overview {
+	margin-bottom: 40px
+}
+
 .overview-title {
-	color:red;
+	color: #EC4B75;
 }
 
 .overview-text {
 	font-size: 26px;
+}
+
+.component-img {
+	height: 150px;
+}
+
+.component-explanation {
+	color: white;
+	background: #AA72B0;
 }
 
 
