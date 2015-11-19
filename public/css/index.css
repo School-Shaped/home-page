@@ -65,11 +65,18 @@
 
 .component-img {
 	height: 150px;
+	margin-bottom: 30px;
 }
 
 .component-explanation {
 	color: white;
 	background: #AA72B0;
+}
+
+.explanation-question {
+	font-weight: bold;
+	margin-bottom: 40px;
+	margin-top: 40px;
 }
 
 
