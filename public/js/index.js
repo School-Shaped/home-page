@@ -14,30 +14,53 @@ window.onload = setContentHeight;
 $(function(){
 	// rotateText();
 
-	var firstInstance = jsPlumb.getInstance();
-	firstInstance.setContainer($(".program-explanations"));
+	var rightToLeftConnector = jsPlumb.getInstance();
+	rightToLeftConnector.setContainer($(".explanation-section"));
 
-	firstInstance.importDefaults({
-		Connector:[ "Straight" ],
-		Anchors : [ "BottomCenter", "TopCenter" ],
+	var leftToRightConnector = jsPlumb.getInstance();
+	leftToRightConnector.setContainer($(".explanation-section"));
+
+	var bottomToTopConnector = jsPlumb.getInstance();
+	bottomToTopConnector.setContainer($(".explanation-section"));
+
+	rightToLeftConnector.importDefaults({
+		Connector:[ "Flowchart"],
+		Anchors : [ "Bottom", "Left" ],
 		Endpoint:[ "Dot", { radius:5 } ],
 		EndpointStyle : { fillStyle: "#567567"  },
 		// Anchor : [ 0.5, 0.5, 1, 1 ]
 	});
 
-	var numberOfExplanations = 5;
+	leftToRightConnector.importDefaults({
+		Connector:[ "Flowchart"],
+		Anchors : [ "Bottom", "Right" ],
+		Endpoint:[ "Dot", { radius:5 } ],
+		EndpointStyle : { fillStyle: "#567567"  },
+		// Anchor : [ 0.5, 0.5, 1, 1 ]
+	});
 
-	for (i = 1; i < numberOfExplanations; i++) {
-		firstInstance.connect({
-			source:"teacher-explanation-" + i, 
-			target:"teacher-explanation-" + (i + 1)		
-		});	
+	bottomToTopConnector.importDefaults({
+		Connector:[ "Flowchart"],
+		Anchors : [ "Bottom", "Top" ],
+		Endpoint:[ "Dot", { radius:5 } ],
+		EndpointStyle : { fillStyle: "#567567"  },
+		// Anchor : [ 0.5, 0.5, 1, 1 ]
+	});	
 
-		firstInstance.connect({
-			source:"builder-explanation-" + i, 
-			target:"builder-explanation-" + (i + 1)		
-		});	
-	}	
+	rightToLeftConnector.connect({
+		source:"teachers-header",
+		target:"school-shaped-header"
+	});	
+
+	leftToRightConnector.connect({
+		source:"builders-header",
+		target:"school-shaped-header"
+	});	
+
+	bottomToTopConnector.connect({
+		source:"school-shaped-header-bottom",
+		target:"component-explanation"
+	});	
 })
 
 function rotateText(currentIndex) {

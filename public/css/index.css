@@ -11,21 +11,24 @@
 }
 
 .section {
-	/*visibility: hidden;*/
-	/*position: relative;*/
+	visibility: hidden;
+	position: relative;
 }
 
 .intro {	
   	color: white;  	
 }
 
-.intro-container {
-	/*margin: 10px 0 0 0;*/
+.centered-container {
 	position: relative;
-  	top: 25%;
+	top: 25%;
   	transform: translateY(-25%);	
-  	background: #6ec173;  
-  	padding: 50px 0px 50px 0px;
+}
+
+.intro-container {
+	background: #6ec173;  
+  	padding: 50px 20px 50px 20px;
+  	margin-bottom: 20px;
 }
 
 .intro-line-1 {	
@@ -70,7 +73,7 @@
 
 .next-section {
 	position: absolute;
-	bottom: 2px;
+	bottom: 10px;
 	width: 100%;
 }
 
@@ -78,15 +81,57 @@
 	margin-bottom: 0px;
 }
 
+.explanation-section {
+	position: relative;
+}
+
+.problem-statement {
+	margin-bottom: 80px;
+}
+
+.problem-header {
+	color: #EC4B75;
+}
+
+.solution-header {
+	display: inline;
+	padding: 0 50px 0 50px;	
+}
+
+.school-shaped-header {
+	background: #EED66F;
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 10px 0;
+}
+
+.problem {
+	margin-bottom: 50px;
+}
+
+.solution-header {
+	margin-bottom: 50px;
+}
+
 .component-img {
 	height: 150px;
 	margin-bottom: 30px;
+}
+
+/*needed so there is a gap for jsplumb*/
+.component-explanation-wrapper {
+	padding-top: 20px;
 }
 
 .component-explanation {
 	color: white;
 	background: #AA72B0;
 	padding: 20px 0 20px 0;
+}
+
+.component-header {
+	margin-bottom: 20px;
+	font-weight: 900;
 }
 
 .explanation-question {
@@ -116,55 +161,24 @@
 
 /* to be used for img resizing */
 @media (max-device-width: 480px) { 
+	.intro-line-1 {	
+		font-weight: 900;	
+		font-size: 85px;
+	}
+
 	.component-img, .results-img {
 		height: 300px;
-	}
-
-	.bio-text, .bio-img {
-		text-align: center;
-	}
-
-	h1 {
-		font-size: 90px;
-	}
-
-	h3 {
-		font-size: 60px;
-	}
-
-	h2 {
-		font-size: 75px;
-	}
-
-	body {
-		font-size: 50px;
 	}
 
 	.component-img {
 		position: relative;
 		bottom: 0px;
 		transform: translateX(0%);
-	}
-
-	.component-img.distribute-img {
-		margin-top: 40px;
-	}
-
-	.component-img.rocket-img {
-		margin-top: 20px;
-	}
-
-	.distribute-img, .rocket-img {
-		margin-bottom: 20px;
-	}
+	}	
 
 	.component {
 		padding-top: 10px;
 		height: inherit;		
 		margin-bottom: 20px;
-	}
-
-	.bio-text {
-		margin-bottom: 40px;
 	}
 }
