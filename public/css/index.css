@@ -7,6 +7,7 @@
   	-moz-transform-style: preserve-3d;
   	transform-style: preserve-3d;
 
+  	position: relative;
 }
 
 .section {
@@ -19,10 +20,10 @@
 }
 
 .intro-container {
-	margin: 10px 0 60px 0;
-	/*position: relative;*/
-  	/*top: 25%;*/
-  	/*transform: translateY(-25%);	*/
+	/*margin: 10px 0 0 0;*/
+	position: relative;
+  	top: 25%;
+  	transform: translateY(-25%);	
   	background: #6ec173;  
   	padding: 50px 0px 50px 0px;
 }
@@ -63,6 +64,20 @@
 	color: #EC4B75;
 }
 
+.explanation-question {
+	color: #EC4B75;
+}
+
+.next-section {
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+}
+
+.next-section-arrow {
+	margin-bottom: 0px;
+}
+
 .component-img {
 	height: 150px;
 	margin-bottom: 30px;
@@ -71,12 +86,13 @@
 .component-explanation {
 	color: white;
 	background: #AA72B0;
+	padding: 20px 0 20px 0;
 }
 
 .explanation-question {
 	font-weight: bold;
-	margin-bottom: 40px;
-	margin-top: 40px;
+	margin-bottom: 20px;
+	/*margin-top: 40px;*/
 }
 
 .results-section {
