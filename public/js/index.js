@@ -8,8 +8,8 @@ function setContentHeight() {
 	}
 }
 
-// window.onresize = setContentHeight;
-// window.onload = setContentHeight;
+window.onresize = setContentHeight;
+window.onload = setContentHeight;
 
 $(function(){
 	// rotateText();
