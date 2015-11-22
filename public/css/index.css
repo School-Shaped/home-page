@@ -87,6 +87,7 @@
 
 .problem-statement {
 	margin-bottom: 80px;
+	position: relative;
 }
 
 .problem-header {
@@ -140,13 +141,24 @@
 	/*margin-top: 40px;*/
 }
 
+.free-wrapper {
+	background: #6ec173;
+	color: white;
+	margin: 0 0 0 0;
+}
+
+.free-header {
+	padding: 20px 0 20px 0;
+	margin: 0 0 0 0;
+}
+
 .results-section {
 	margin-top: 60px;
 }
 
 .results-title {
 	color: #EC4B75;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .result-listing {
@@ -157,7 +169,23 @@
 	height: 130px;
 }
 
+.email-list-wrapper {
+	background: #EED66F;
+	padding:10px;
+}
 
+.signup-link {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	color: black;
+	margin-right: 20px;	
+}
+
+.signup-link:hover {
+	text-decoration: none;
+	color: black;
+}
 
 /* to be used for img resizing */
 @media (max-device-width: 480px) { 
@@ -180,5 +208,41 @@
 		padding-top: 10px;
 		height: inherit;		
 		margin-bottom: 20px;
+	}
+
+	.jsplumb-endpoint {
+		display: none;
+	}
+
+	.jsplumb-connector {
+		display: none;
+	}
+
+	.school-shaped-header {
+		display: none;
+	}
+
+	.result-listing {
+		margin-bottom: 120px;
+	}
+
+	.results-img {
+		margin-bottom: 30px;
+	}
+
+	.results-title {
+		margin: 70px 0 100px 0;		
+	}
+
+	.involvement-call {
+		margin-bottom: 20px;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.nav-dropdown {
+		display: block;
 	}
 }

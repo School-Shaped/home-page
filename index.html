@@ -1,14 +1,15 @@
 <html>
-<head>
-	<meta name="google-site-verification" content="O7e--0_YfxmgdeJ1-F2JeqTo9jW0fXT3OJRVNxB-zYo" />
+<head>	
 	<title>School Shaped</title>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css"></link>
 	<link rel="stylesheet" type="text/css" href="public/css/index.css"></link>	
 	<link rel="stylesheet" type="text/css" href="public/css/common.css"></link>	
+	<link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css"></link>
 	<script type="text/javascript" src="public/js/jsPlumb-2.0.4.js"></script>
 	<script type="text/javascript" src="public/js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="public/js/index.js"></script>
+	<script type="text/javascript" src="public/js/common.js"></script>
 	<link rel="icon" type="image/png" href="public/img/favicon.png">
 
 	<script>
@@ -32,10 +33,23 @@
 					</div>
 				</div>
 				<div class="nav-links">
-					<h4 class="nav-link active"><a href="">home</a></h4>
-					<h4 class="nav-link"><a href="/mission.html">mission</a></h4>
-					<h4 class="nav-link"><a href="/team.html">team</a></h4>
+					<h4 class="nav-link active"><a href="index.html">home</a></h4>
+					<h4 class="nav-link"><a href="faq.html">FAQ</a></h4>
+					<h4 class="nav-link"><a href="team.html">team</a></h4>
 					<h4 class="nav-link"><a href="http://blog.schoolshaped.org">blog</a></h4>
+				</div>
+				<!-- only shown on small screens -->
+				<div class="nav-dropdown">					
+					<div class="btn-group">
+					  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="menu-button-icon glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#"><a href="faq.html">FAQ</a></li>
+					    <li><a href="#"><a href="team.html">team</a></li>
+					    <li><a href="#"><a href="http://blog.schoolshaped.org">blog</a></li>					    
+					  </ul>
+					</div>
 				</div>
 			</div> 
 
@@ -47,19 +61,6 @@
 						<!-- <a class="learn-more-link"><h3 class="learn-more">Our Mission</h3></a>										 -->
 					</div>						
 				</div>		
-
-			<!-- 	<div class="program-overview container">			
-					<div class="row">
-						<div class="overview-wrapper col-md-10 col-md-offset-1">			
-							<h2 class="overview-title">
-								Let's build a community
-							</h2>
-							<h3 class="overview-text">
-								School Shaped enables change in the classroom by partnering teachers with teams of engineers and designers to create amazing student experiences. For free.
-							</h3>
-						</div>
-					</div>
-				</div> -->
 			</div>	
 
 			<div class="next-section text-center">
@@ -115,7 +116,7 @@
 								<div class="col-md-10 component text-center">
 									<h2 class="component-header"> Learn </h2>							
 									<img class="component-img" src="public/img/noun_207968.svg"/>
-									<h3 class="component-text">A School Shaped team of designers and engineers observe a classroom, and learn from a teacher</h3>
+									<h3 class="component-text">A School Shaped team of designers and engineers observe a teacher at work, to discover what it means to teach and learn in today's classroom.</h3>
 								</div>																	
 							</div>			
 							<div class="col-md-4">
@@ -131,12 +132,17 @@
 								<div class="col-md-10 component text-center">							
 									<h2 class="component-header"> Inspire </h2>
 									<img class="component-img" src="public/img/noun_34598.svg"/>				
-									<h3 class="component-text">The team documents the process and results online, to inspire and inform developers around the world as they create the next generation of edtech</h3>
-								</div>
-								<div class="col-md-2"></div>						
+									<!-- <h3 class="component-text">The teacher receives the finished prototype to continue using in their classroom, expanding their teaching toolbox</h3> -->
+									<h3 class="component-text">The process and results are documented online, to inform and inspire other developers as they create the next generation of edtech.</h3>
+								</div>								
 							</div>
 						</div>						
 					</div>
+				</div>
+				<div class="free-wrapper text-center">				
+					<h2 class="free-header">
+						All for free
+					</h2>					
 				</div>
 			</div>
 
@@ -154,7 +160,7 @@
 							</div>
 							<div class="col-md-9">
 								<h3 class="results-text">
-									Teacher receive the tools and experieces they want, but don't have time to make themselves. This helps them focus on the thing that matters most: teaching.
+									Teacher receive the tools and experieces they want, but don't have time to make themselves. This allows them to focus on the thing that matters most: creating a great experience for their students.
 								</h3>				
 							</div>									
 						</div>
@@ -167,7 +173,7 @@
 							</div>
 							<div class="col-md-9">
 								<h3 class="results-text">
-									School Shaped teams gain insight into a classroom, professional mentorship and experience. They are ready to create amazing edtech products.
+									School Shaped teams gain insight into a classroom, professional mentorship and experience. They leave the program ready to create amazing edtech.
 								</h3>				
 							</div>									
 						</div>
@@ -179,15 +185,47 @@
 								<img class="results-img" src="public/img/noun_14977.svg">						
 							</div>
 							<div class="col-md-9">
-								<h3 class="results-text">
+								<!-- <h3 class="results-text">
 									Each project, from design to results, is publicly documented, to inspire and inform developers around the world as they create the next generation of edtech.
+								</h3>	 -->
+								<h3 class="results-text">
+									We empower our partner communities to imagine new uses of the classroom through design thinking, even after the program is done.
 								</h3>				
 							</div>									
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+
+			<div class="email-list-wrapper text-center">
+				<div class="container">
+					<div class="row">
+						<h4 class="involvement-call col-md-3 col-md-offset-3">
+							Want to get involved?
+						</h4>
+						<h4 class="col-md-4">							
+							<a class="signup-link" href="">Teachers</a>						
+							<a class="signup-link" href="">Builders</a>						
+						</h4>						
+					</div>
+				</div>
+			</div>			
+			<div class="footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 clearfix">
+							<h4 class="contact"> School Shaped, San Francisco CA <a href="mailto:team@schoolshaped.org">team@schoolshaped.org</a></h4>
+						</div>
+						<div class="col-md-4 col-md-offset-2">
+							<h1 class="connect">
+								<a href="http://twitter.com/schoolshaped"><i class="fa fa-twitter-square"></i></a>
+								<a href="http://facebook.com/schoolshaped"><i class="fa fa-facebook-square"></i></a>
+							</h1>
+						</div>					
+					</div>
+				</div>			
+			</div>
+		</div>		
 	</div>		
 </body>
 </html>
