@@ -171,6 +171,7 @@
 
 .email-list-wrapper {
 	background: #EED66F;
+	margin-top: 40px;
 	padding:10px;
 }
 
@@ -234,7 +235,7 @@
 		margin: 70px 0 100px 0;		
 	}
 
-	.involvement-call {
+	.involvement-call {		
 		margin-bottom: 20px;
 	}
 
