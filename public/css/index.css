@@ -36,25 +36,6 @@
 	font-size: 50px;
 }
 
-.learn-more-link {
-	display: block;
-	margin-top: 60px;
-	margin-bottom: 20px;		
-}
-
-.learn-more-link:hover {
-	text-decoration: none;
-}
-
-.learn-more {	
-	background: #f7f387;
-	font-weight: 900;	
-	padding: 10px 20px 10px 20px;
-	display: inline;
-	color: black;
-	cursor: pointer;
-}
-
 .overview-wrapper {	
 	text-align: center;
 }
@@ -85,13 +66,83 @@
 	position: relative;
 }
 
+.problem {
+	margin: 50px 0 10px 0;
+}
+
 .problem-statement {
 	margin-bottom: 80px;
 	position: relative;
 }
 
-.problem-header {
+.problem-intro {	
 	color: #EC4B75;
+	font-weight: bold
+}
+
+.idea {
+	background: #62BECE;
+	color: white;
+	display: inline-block;
+	padding: 10px 10px 10px 10px;	
+	margin: 0 0 0 0;
+}
+
+.ideas .row {
+	margin-bottom: 10px
+}
+
+.cliff.row {
+	margin-top: 100px;
+}
+
+.cliff-start {
+	border-top: 5px solid rgb(110, 110, 110);
+	border-right: 5px solid rgb(110, 110, 110);
+	/*border-radius: 4px;*/
+	height: 100px;
+}
+
+.canyon {
+	height: 150px;
+	/*border-bottom: 5px solid rgb(110, 110, 110);*/
+	margin: 0 0 0 0;
+}
+
+.canyon-text {
+	position: relative;
+	top: 25%;
+}
+
+.cliff-end {
+	border-top: 5px solid rgb(110, 110, 110);
+	border-left: 5px solid rgb(110, 110, 110);
+	/*border-radius: 4px;*/
+	height: 100px;
+}
+
+.cliff-piece {
+	padding: 0 0 0 0;
+}
+
+.cliff-img-wrapper {
+	text-align: center;
+}
+
+.cliff-img {
+	height: 50px;	
+}
+
+.cliff-text.start {
+	background: url("../img/searching-person.svg");
+	background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: 100% 100%; 
+}
+
+.cliff-text {
+	height: 50px;
+	margin: 0 0 0 0;
 }
 
 .solution-header {
@@ -104,10 +155,6 @@
 	display: inline-block;
 	padding: 10px;
 	margin: 0 0 10px 0;
-}
-
-.problem {
-	margin-bottom: 50px;
 }
 
 .solution-header {
@@ -158,10 +205,10 @@
 /*needed so there is a gap for jsplumb*/
 .component-explanation-wrapper {
 	padding-top: 20px;
+	margin-bottom: 100px
 }
 
-.component-explanation {	
-	padding: 20px 0 20px 0;
+.component-explanation {		
 	text-align: center;
 }
 
@@ -187,13 +234,37 @@
 	margin: 0 0 0 0;
 }
 
-.easy-header {
-	color: #EC4B75
+.easy-wrapper {
+	background: #EC4B75;
+	color: white;
+	margin: 0 0 0 0;
 }
 
-.results-section {
-	margin-top: 10px;
+.easy-section {
+	margin-top: 100px;
 }
+
+.easy-header {	
+	padding: 20px 0 20px 0;
+	margin: 0 0 0 0;
+}
+
+.action-section {
+	margin-top: 100px;
+	margin-bottom: 90px;
+}
+
+.action-wrapper {
+	background: #EED66F;
+	color: black;
+	margin: 0 0 15px 0;
+}
+
+.action-header {
+	padding: 20px 0 20px 0;
+	margin: 0 0 0 0;
+}
+
 
 .results-title {
 	color: #EC4B75;
@@ -210,7 +281,7 @@
 
 .email-list-wrapper {
 	background: #EED66F;
-	margin-top: 40px;
+	margin-top: 100px;
 	padding:10px;
 }
 
