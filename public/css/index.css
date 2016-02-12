@@ -71,7 +71,7 @@
 }
 
 .problem-statement {
-	margin-bottom: 150px;
+	margin-bottom: 40px;
 	position: relative;
 }
 
@@ -88,8 +88,13 @@
 	margin: 0 0 0 0;
 }
 
-.ideas .row {
+.idea-wrapper {
 	margin-bottom: 10px
+}
+
+.cliff {
+	background: rgb(247, 247, 247);
+	padding-top: 20px;
 }
 
 .cliff.row {
@@ -101,25 +106,25 @@
 	border-top: 5px solid rgb(128, 128, 128);
 	border-right: 5px solid rgb(128, 128, 128);
 	/*border-radius: 4px;*/
-	height: 100px;
+	height: 500px;
 }
 
 .canyon {
-	height: 150px;
+	height: 550px;
 	/*border-bottom: 5px solid rgb(110, 110, 110);*/
 	margin: 0 0 0 0;
+	padding-top: 150px;
 }
 
-.canyon-text {
-	position: relative;
-	top: 25%;
+.ideas {
+	margin-bottom: 100px
 }
 
 .cliff-end {
 	border-top: 5px solid rgb(128, 128, 128);
 	border-left: 5px solid rgb(128, 128, 128);
 	/*border-radius: 4px;*/
-	height: 100px;
+	height: 500px;
 }
 
 .cliff-piece {
@@ -156,6 +161,14 @@
 	font-weight: bold;	
 } 
 
+.component-explanation-wrapper {
+	background: rgb(247, 247, 247);
+}
+
+.explanation-header-wrapper {
+	margin-bottom: 30px
+}
+
 .explanation-header {
 	color: white;
 	display: inline-block;
@@ -184,7 +197,7 @@
 }
 
 .arrowhead {	
-	height: 150px;
+	height: 120px;
 	margin-left: -3px;
 	z-index: 0;		
 	display: block
