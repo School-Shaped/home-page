@@ -2,6 +2,10 @@ body {
 	font-family: Raleway, Helvetica;	
 }
 
+.mobile-only {
+	display: none
+}
+
 .topbar {	
 	padding: 30px 55px 0px 55px; 
 	background: white
@@ -128,5 +132,13 @@ body {
 
 	.footer {
 		text-align: center;
+	}
+
+	.mobile-only {
+		display: block
+	}
+
+	.screen-only {
+		display: none;
 	}
 }

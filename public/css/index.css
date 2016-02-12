@@ -114,9 +114,45 @@
 	margin-bottom: 50px;
 }
 
+.img-row {
+	padding: 10px 0 0 0;
+	position: relative; 
+}
+
+.program-img {
+	margin-right: 0px;
+	background: rgb(242, 242, 242);	
+	padding: 10px 0 10px 0;
+	z-index: 100;
+	border-top: 2px solid rgb(128, 128, 128);
+	border-bottom: 2px solid rgb(128, 128, 128);
+}
+
+.program-img.img-1 {
+	border-left: 2px solid rgb(128, 128, 128);
+}
+
+.arrowhead {	
+	height: 120px;
+	margin-left: -2px;
+	z-index: 0;		
+	display: block
+}
+
+.arrowhead-wrapper {
+	position: relative;	
+	bottom: 23px;
+	padding: 0;	
+}
+
 .component-img {
-	height: 150px;
-	margin-bottom: 30px;
+	height: 50px;
+	text-align: center;
+}
+
+.description-row {
+	position: relative;
+	bottom: 23px;
 }
 
 /*needed so there is a gap for jsplumb*/
@@ -124,10 +160,9 @@
 	padding-top: 20px;
 }
 
-.component-explanation {
-	color: white;
-	background: #AA72B0;
+.component-explanation {	
 	padding: 20px 0 20px 0;
+	text-align: center;
 }
 
 .component-header {
@@ -141,19 +176,23 @@
 	/*margin-top: 40px;*/
 }
 
-.free-wrapper {
+.anyone-wrapper {
 	background: #6ec173;
 	color: white;
 	margin: 0 0 0 0;
 }
 
-.free-header {
+.anyone-header {
 	padding: 20px 0 20px 0;
 	margin: 0 0 0 0;
 }
 
+.easy-header {
+	color: #EC4B75
+}
+
 .results-section {
-	margin-top: 60px;
+	margin-top: 10px;
 }
 
 .results-title {
@@ -203,7 +242,12 @@
 		position: relative;
 		bottom: 0px;
 		transform: translateX(0%);
+		margin: 30px 0 30px 0;
 	}	
+
+	.program-row {
+		margin-bottom: 100px;
+	}
 
 	.component {
 		padding-top: 10px;
