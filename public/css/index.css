@@ -71,7 +71,7 @@
 }
 
 .problem-statement {
-	margin-bottom: 80px;
+	margin-bottom: 150px;
 	position: relative;
 }
 
@@ -94,11 +94,12 @@
 
 .cliff.row {
 	margin-top: 100px;
+	margin-bottom: 150px
 }
 
 .cliff-start {
-	border-top: 5px solid rgb(110, 110, 110);
-	border-right: 5px solid rgb(110, 110, 110);
+	border-top: 5px solid rgb(128, 128, 128);
+	border-right: 5px solid rgb(128, 128, 128);
 	/*border-radius: 4px;*/
 	height: 100px;
 }
@@ -115,8 +116,8 @@
 }
 
 .cliff-end {
-	border-top: 5px solid rgb(110, 110, 110);
-	border-left: 5px solid rgb(110, 110, 110);
+	border-top: 5px solid rgb(128, 128, 128);
+	border-left: 5px solid rgb(128, 128, 128);
 	/*border-radius: 4px;*/
 	height: 100px;
 }
@@ -143,22 +144,25 @@
 .cliff-text {
 	height: 50px;
 	margin: 0 0 0 0;
+	font-weight: bold;
 }
 
-.solution-header {
-	display: inline;
-	padding: 0 50px 0 50px;	
+.answer {
+	/*margin-top: 50px;*/
+	margin-bottom: 150px;
 }
 
-.school-shaped-header {
-	background: #EED66F;
+.answer-header {
+	font-weight: bold;	
+} 
+
+.explanation-header {
+	color: white;
 	display: inline-block;
+	/*background: #EC4B75;*/
+	background: rgb(110, 193, 115);
 	padding: 10px;
-	margin: 0 0 10px 0;
-}
-
-.solution-header {
-	margin-bottom: 50px;
+	margin: 0 0 0 0;
 }
 
 .img-row {
@@ -171,17 +175,17 @@
 	background: rgb(242, 242, 242);	
 	padding: 10px 0 10px 0;
 	z-index: 100;
-	border-top: 2px solid rgb(128, 128, 128);
-	border-bottom: 2px solid rgb(128, 128, 128);
+	border-top: 5px solid rgb(128, 128, 128);
+	border-bottom: 5px solid rgb(128, 128, 128);
 }
 
 .program-img.img-1 {
-	border-left: 2px solid rgb(128, 128, 128);
+	border-left: 5px solid rgb(128, 128, 128);
 }
 
 .arrowhead {	
-	height: 120px;
-	margin-left: -2px;
+	height: 150px;
+	margin-left: -3px;
 	z-index: 0;		
 	display: block
 }
@@ -205,7 +209,7 @@
 /*needed so there is a gap for jsplumb*/
 .component-explanation-wrapper {
 	padding-top: 20px;
-	margin-bottom: 100px
+	margin-bottom: 150px
 }
 
 .component-explanation {		
@@ -223,15 +227,23 @@
 	/*margin-top: 40px;*/
 }
 
-.anyone-wrapper {
-	background: #6ec173;
+.results-header {
+	display: inline-block;	
+	padding: 10px 10px 10px 10px;	
 	color: white;
 	margin: 0 0 0 0;
 }
 
-.anyone-header {
-	padding: 20px 0 20px 0;
-	margin: 0 0 0 0;
+.results-header.inclusive {
+	background: #aa73b1;
+}
+
+.results-header.simple {
+	background: #40c2d1;
+}
+
+.results-header.impactful {
+	background: #6ec173;
 }
 
 .easy-wrapper {
@@ -339,7 +351,7 @@
 	}
 
 	.result-listing {
-		margin-bottom: 120px;
+		margin-bottom: 150px;
 	}
 
 	.results-img {
