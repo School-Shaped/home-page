@@ -110,7 +110,7 @@
 }
 
 .canyon {
-	height: 550px;
+	height: 570px;
 	/*border-bottom: 5px solid rgb(110, 110, 110);*/
 	margin: 0 0 0 0;
 	padding-top: 150px;
@@ -135,19 +135,15 @@
 	text-align: center;
 }
 
-.cliff-img {
-	height: 50px;	
-}
-
 .cliff-text.start {
-	background: url("../img/searching-person.svg");
+	background: url("../img/point-person.svg");
 	background-size: 70px;
 	background-repeat: no-repeat;
-	background-position: 100% 100%; 
+	background-position: 100% 105%; 
 }
 
 .cliff-text {
-	height: 50px;
+	height: 70px;
 	margin: 0 0 0 0;
 	font-weight: bold;
 }
