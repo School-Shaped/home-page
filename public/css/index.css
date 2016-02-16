@@ -120,6 +120,15 @@
 	margin-bottom: 100px
 }
 
+.ideas.mobile-only {
+	margin-bottom: 150px;
+	margin-top: 150px
+}
+
+.starting-question.mobile-only {
+	margin-bottom: 150px;	
+}
+
 .cliff-end {
 	border-top: 5px solid rgb(128, 128, 128);
 	border-left: 5px solid rgb(128, 128, 128);
@@ -380,5 +389,9 @@
 
 	.nav-dropdown {
 		display: block;
+	}
+
+	.results-header {
+		margin-top: 100px;
 	}
 }
